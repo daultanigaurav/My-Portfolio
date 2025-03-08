@@ -1,12 +1,13 @@
-import { useState } from "react";
+import { toast } from 'react-toastify';
 
 export function useToast() {
-  const [toast, setToast] = useState<string | null>(null);
-
-  const showToast = (message: string) => {
-    setToast(message);
-    setTimeout(() => setToast(null), 3000);
+  const showToast = (message: string, type: "success" | "error" = "success") => {
+    if (type === "success") {
+      toast.success(message); 
+    } else if (type === "error") {
+      toast.error(message);
+    }
   };
 
-  return { toast, showToast };
+  return { showToast };
 }

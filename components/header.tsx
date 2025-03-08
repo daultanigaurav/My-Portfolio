@@ -4,6 +4,7 @@ import { useState } from "react"
 import Link from "next/link"
 import { useTheme } from "next-themes"
 import { Moon, Sun, Menu, X } from "lucide-react"
+// import { Button } from "@/components/ui/button"
 import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
 
@@ -24,7 +25,7 @@ export default function Header() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="text-2xl font-bold text-gray-900 dark:text-white">
-            Your Name
+            Gaurav Daulatni
           </Link>
           <nav className="hidden md:block">
             <ul className="flex space-x-4">

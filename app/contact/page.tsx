@@ -1,7 +1,6 @@
 "use client"
 
 import type React from "react"
-
 import { useState } from "react"
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
@@ -13,19 +12,16 @@ export default function Contact() {
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
   const [message, setMessage] = useState("")
-  const { toast } = useToast()
-
+  // const { toast } = useToast()  
+  
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Here you would typically send the form data to your backend
+    
+    // toast({
+    //   title: "Message sent!",
+    //   description: "Thank you for your message. We'll get back to you soon.",
+    // })
 
-    // For this example, we'll just show a success toast
-    toast({
-      title: "Message sent!",
-      description: "Thank you for your message. We'll get back to you soon.",
-    })
-
-    // Reset form fields
     setName("")
     setEmail("")
     setMessage("")
@@ -60,4 +56,3 @@ export default function Contact() {
     </div>
   )
 }
-

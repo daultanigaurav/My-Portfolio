@@ -15,7 +15,7 @@ export default function Footer() {
             <Github className="h-6 w-6" />
           </a>
           <a
-            href="https://linkedin.com/in/"
+            href="https://www.linkedin.com/in/daultanigaurav"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-gray-500"
@@ -34,7 +34,7 @@ export default function Footer() {
           </a>
         </div>
         <p className="mt-8 text-center text-base text-gray-400">
-          &copy; {new Date().getFullYear()} Your Name. All rights reserved.
+          &copy; {new Date().getFullYear()} GAURAV DAULTANI. All rights reserved.
         </p>
       </div>
     </footer>

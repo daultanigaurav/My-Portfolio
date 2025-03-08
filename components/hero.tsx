@@ -8,7 +8,7 @@ export default function Hero() {
           <div className="lg:w-1/2">
             <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-5xl md:text-6xl">
               <span className="block xl:inline">Hi, I'm</span>{" "}
-              <span className="block text-indigo-600 xl:inline">Your Name</span>
+              <span className="block text-indigo-600 xl:inline">Gaurav Daultani</span>
             </h1>
             <p className="mt-3 max-w-md mx-auto text-lg text-gray-500 dark:text-gray-300 sm:text-xl md:mt-5 md:max-w-3xl">
               A passionate developer creating amazing web experiences.
