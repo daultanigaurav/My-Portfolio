@@ -12,15 +12,15 @@ export default function Contact() {
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
   const [message, setMessage] = useState("")
-  // const { toast } = useToast()  
+  const { toast } = useToast()  
   
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     
-    // toast({
-    //   title: "Message sent!",
-    //   description: "Thank you for your message. We'll get back to you soon.",
-    // })
+    toast({
+      title: "Message sent!",
+      description: "Thank you for your message. We'll get back to you soon.",
+    })
 
     setName("")
     setEmail("")
